@@ -34,7 +34,7 @@ set (SOURCES
 )
 
 if (VCOS_PTHREADS_BUILD_SHARED)
-   add_library (vcos SHARED ${SOURCES})
+   add_library (vcos STATIC ${SOURCES})
    target_link_libraries (vcos pthread dl rt)
 else ()
    add_library (vcos ${SOURCES})

@@ -1,5 +1,5 @@
 
-add_library(vchiq_arm SHARED
+add_library(vchiq_arm STATIC
             vchiq_lib.c vchiq_util.c)
 
 # pull in VCHI cond variable emulation
